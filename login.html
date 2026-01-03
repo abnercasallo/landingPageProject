@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone - Iniciar sesión</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="login-header">
+        <a href="index.html">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix Logo">
+        </a>
+    </header>
+
+    <div class="login-wrapper">
+        <div class="login-box">
+            <h1>Inicia sesión</h1>
+            <div id="error-message" class="error-banner" style="display: none;"></div>
+            <form id="login-form">
+                <div class="form-control">
+                    <input type="email" id="email" placeholder="Correo o número de teléfono" required>
+                </div>
+                <div class="form-control">
+                    <input type="password" id="password" placeholder="Contraseña" required>
+                </div>
+                <button type="submit" class="btn btn-login">Iniciar sesión</button>
+                <div class="login-help">
+                    <div class="remember">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">Recuérdame</label>
+                    </div>
+                    <a href="#">¿Necesitas ayuda?</a>
+                </div>
+            </form>
+
+            <div class="login-signup">
+                ¿Primera vez en Netflix? <a href="register.html">Suscríbete ahora</a>.
+            </div>
+        </div>
+    </div>
+
+    <footer class="login-footer">
+        <div class="login-footer-content">
+            <p>¿Preguntas? Llama al 1-844-505-2993</p>
+            <div class="login-footer-cols">
+                <ul>
+                    <li><a href="#">Preguntas frecuentes</a></li>
+                    <li><a href="#">Centro de ayuda</a></li>
+                    <li><a href="#">Términos de uso</a></li>
+                    <li><a href="#">Privacidad</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Preferencias de cookies</a></li>
+                    <li><a href="#">Información corporativa</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="login.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone - Mira series y películas online</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="showcase">
+        <div class="showcase-top">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix Logo">
+            <a href="login.html" class="btn btn-rounded">Iniciar sesión</a>
+        </div>
+        <div class="showcase-content">
+            <h1>Películas y series ilimitadas y mucho más.</h1>
+            <p>Disfruta donde quieras. Cancela cuando quieras.</p>
+            <p class="email-pl">¿Quieres ver algo ya? Escribe tu correo para crear o reactivar tu suscripción.</p>
+            <div class="email-form">
+                <input type="email" id="hero-email" placeholder="Dirección de correo">
+                <button class="btn btn-xl" id="hero-submit">Empezar <i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+        <div class="showcase-overlay"></div>
+        <!-- Image is present but hidden via CSS for layout purposes -->
+        <img src="assets/hero_bg.png" class="showcase-bg" alt="Fondo">
+    </header>
+
+    <!-- Features -->
+    <section class="style-cards">
+        <div class="card-0">
+            <div class="desc-0">
+                <h1>Disfruta en tu TV.</h1>
+                <p>Disfruta en smart TV, PlayStation, Xbox, Chromecast, Apple TV, reproductores de Blu-ray y mucho más.
+                </p>
+            </div>
+            <img src="assets/feature_tv.jpg" alt="TV">
+        </div>
+        <div class="card-1">
+            <div class="desc-1">
+                <img src="assets/feature_mobile.png" alt="Móvil">
+                <div class="downloading">
+                    <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/boxshot.png"
+                        alt="Portada">
+                    <div class="download-text">
+                        <div class="text-0">Stranger Things</div>
+                        <div class="text-1">Descargando...</div>
+                    </div>
+                </div>
+            </div>
+            <div class="desc-2">
+                <h1>Descarga tus series para verlas offline.</h1>
+                <p>Guarda tus títulos favoritos fácilmente y tendrás siempre algo que ver.</p>
+            </div>
+        </div>
+        <div class="card-2">
+            <div class="desc-3">
+                <h1>Disfruta donde quieras.</h1>
+                <p>Películas y series ilimitadas en tu teléfono, tableta, ordenador y TV.</p>
+            </div>
+            <img src="assets/feature_devices.png" alt="Dispositivos">
+        </div>
+        <div class="card-3">
+            <div class="desc-4">
+                <img src="assets/feature_kids.png" alt="Niños">
+            </div>
+            <div class="desc-5">
+                <h1>Crea perfiles para niños.</h1>
+                <p>Los niños vivirán aventuras con sus personajes favoritos en un espacio diseñado exclusivamente para
+                    ellos, gratis con tu suscripción.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+        <h1>Preguntas frecuentes</h1>
+        <ul class="accordion">
+            <li>
+                <button class="accordion-trigger">¿Qué es Netflix?</button>
+                <div class="accordion-content">
+                    <p>Netflix es un servicio de streaming que ofrece una amplia variedad de series, películas, títulos
+                        de anime, documentales y otros contenidos premiados en miles de dispositivos conectados a
+                        internet.</p>
+                    <p>Puedes ver todo el contenido que quieras, cuando quieras y sin un solo anuncio por una tarifa
+                        mensual reducida. ¡Siempre hay algo nuevo que descubrir! Añadimos series y películas nuevas
+                        todas las semanas.</p>
+                </div>
+            </li>
+            <li>
+                <button class="accordion-trigger">¿Cuánto cuesta Netflix?</button>
+                <div class="accordion-content">
+                    <p>Disfruta de Netflix en tu smartphone, tableta, smart TV, ordenador o dispositivo de streaming,
+                        todo por una tarifa mensual fija. Planes desde 9,99 $ hasta 19,99 $ al mes. Sin cargos
+                        adicionales ni contratos.</p>
+                </div>
+            </li>
+            <li>
+                <button class="accordion-trigger">¿Dónde puedo ver Netflix?</button>
+                <div class="accordion-content">
+                    <p>Disfruta donde quieras y cuando quieras. Inicia sesión con tu cuenta de Netflix para disfrutar al
+                        instante de todo el contenido en la web netflix.com desde tu ordenador personal o en cualquier
+                        dispositivo conectado a internet que ofrezca la aplicación de Netflix, entre ellos, smart TV,
+                        smartphones, tabletas, reproductores multimedia y consolas de juegos.</p>
+                    <p>También puedes descargar tus series favoritas con la aplicación de iOS, Android o Windows 10.
+                        Utiliza las descargas para ver títulos donde quieras y cuando no tengas conexión a internet.
+                        Lleva Netflix contigo adonde vayas.</p>
+                </div>
+            </li>
+            <li>
+                <button class="accordion-trigger">¿Cómo cancelo?</button>
+                <div class="accordion-content">
+                    <p>Netflix es flexible. Sin contratos liosos ni compromisos. Puedes cancelar tu suscripción online
+                        con un par de clics. Sin cargos por cancelación: activa o cancela tu cuenta en cualquier
+                        momento.</p>
+                </div>
+            </li>
+        </ul>
+        <div class="email-signup-btm">
+            <p>¿Quieres ver algo ya? Escribe tu correo para crear o reactivar tu suscripción.</p>
+            <div class="email-form">
+                <input type="email" placeholder="Dirección de correo">
+                <button class="btn btn-xl">Empezar</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>¿Preguntas? Llama al 1-844-505-2993</p>
+        <div class="footer-cols">
+            <ul>
+                <li><a href="#">Preguntas frecuentes</a></li>
+                <li><a href="#">Relaciones con inversores</a></li>
+                <li><a href="#">Formas de ver</a></li>
+                <li><a href="#">Información corporativa</a></li>
+                <li><a href="#">Originales de Netflix</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Centro de ayuda</a></li>
+                <li><a href="#">Empleo</a></li>
+                <li><a href="#">Términos de uso</a></li>
+                <li><a href="#">Contáctanos</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Cuenta</a></li>
+                <li><a href="#">Canjear tarjetas regalo</a></li>
+                <li><a href="#">Privacidad</a></li>
+                <li><a href="#">Prueba de velocidad</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Prensa</a></li>
+                <li><a href="#">Comprar tarjetas regalo</a></li>
+                <li><a href="#">Preferencias de cookies</a></li>
+                <li><a href="#">Avisos legales</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

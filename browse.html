@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorar - Netflix Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body class="browse-page">
+    <nav class="browse-nav">
+        <div class="nav-left">
+            <a href="welcome.html">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix"
+                    class="nav-logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Inicio</a></li>
+                <li><a href="#">Series</a></li>
+                <li><a href="#">Películas</a></li>
+                <li><a href="#">Novedades populares</a></li>
+                <li><a href="#">Mi lista</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <i class="fas fa-search nav-icon"></i>
+            <i class="fas fa-bell nav-icon"></i>
+            <div class="user-profile">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png" alt="Profile">
+                <i class="fas fa-caret-down"></i>
+            </div>
+        </div>
+    </nav>
+
+    <div class="billboard">
+        <div class="billboard-content">
+            <div class="featured-logo">
+                <h1 class="movie-title">ANTIGRAVITY: RISE</h1>
+            </div>
+            <p class="movie-desc">Una nueva era de inteligencia artificial ha comenzado. Acompaña a un equipo de élite
+                en una misión para salvar el futuro de la humanidad a través del código y la gravedad.</p>
+            <div class="billboard-actions">
+                <button class="btn btn-play"><i class="fas fa-play"></i> Reproducir</button>
+                <button class="btn btn-info"><i class="fas fa-info-circle"></i> Más información</button>
+            </div>
+        </div>
+    </div>
+
+    <main class="browse-main">
+        <div class="movie-row">
+            <h2>Tendencias actuales</h2>
+            <div id="trending-movies" class="movies-container">
+                <p style="padding: 20px;">Cargando tendencias...</p>
+            </div>
+        </div>
+
+        <div class="movie-row">
+            <h2>Series de suspenso</h2>
+            <div id="thriller-movies" class="movies-container">
+                <p style="padding: 20px;">Cargando suspenso...</p>
+            </div>
+        </div>
+
+        <div class="movie-row">
+            <h2>Mi lista</h2>
+            <div class="movies-container">
+                <div class="movie-card"><img src="https://via.placeholder.com/300x168/222/fff?text=Mi+Lista+1"
+                        alt="Movie"></div>
+                <div class="movie-card"><img src="https://via.placeholder.com/300x168/222/fff?text=Mi+Lista+2"
+                        alt="Movie"></div>
+                <div class="movie-card"><img src="https://via.placeholder.com/300x168/222/fff?text=Mi+Lista+3"
+                        alt="Movie"></div>
+                <div class="movie-card"><img src="https://via.placeholder.com/300x168/222/fff?text=Mi+Lista+4"
+                        alt="Movie"></div>
+                <div class="movie-card"><img src="https://via.placeholder.com/300x168/222/fff?text=Mi+Lista+5"
+                        alt="Movie"></div>
+                <div class="movie-card"><img src="https://via.placeholder.com/300x168/222/fff?text=Mi+Lista+6"
+                        alt="Movie"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer browse-footer">
+        <p>¿Preguntas? Llama al 1-844-505-2993</p>
+        <div class="footer-cols">
+            <ul>
+                <li><a href="#">Preguntas frecuentes</a></li>
+                <li><a href="#">Centro de ayuda</a></li>
+                <li><a href="#">Términos de uso</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Privacidad</a></li>
+                <li><a href="#">Preferencias de cookies</a></li>
+                <li><a href="#">Información corporativa</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="browse.js"></script>
+</body>
+
+</html>

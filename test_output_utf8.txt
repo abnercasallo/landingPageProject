@@ -1,0 +1,172 @@
+﻿node.exe : npm verbose cli 
+C:\Program 
+Files\nodejs\node.exe 
+C:\Program Files\nodejs\node
+_modules\npm\bin\npm-cli.js
+En C:\Program 
+Files\nodejs\npm.ps1: 29 
+Carácter: 3
++   & $NODE_EXE $NPM_CLI_JS 
+$args
++   ~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~
+    + CategoryInfo          
+    : NotSpecified: (npm v  
+  erbose cli...\bin\npm-c   
+ li.js:String) [], Remot    
+eException
+    + FullyQualifiedErrorId 
+    : NativeCommandError
+ 
+npm info using npm@10.9.2
+npm info using node@v22.14.0
+npm verbose title npm test 
+tests/api.test.js
+npm verbose argv "test" 
+"tests/api.test.js" 
+"--loglevel" "verbose"
+npm verbose logfile 
+logs-max:10 dir:C:\Users\Abn
+er\AppData\Local\npm-cache\_
+logs\2025-12-30T19_47_26_514
+Z-
+npm verbose logfile C:\Users
+\Abner\AppData\Local\npm-cac
+he\_logs\2025-12-30T19_47_26
+_514Z-debug-0.log
+
+> landingpage@1.0.0 test
+> jest tests/api.test.js
+
+  console.log
+    [dotenv@17.2.3] injecting env (5) from .env -- tip: ÔÜÖ´©Å  write to custom object with { processEnv: myObject }
+
+      at _log (node_modules/dotenv/lib/main.js:142:11)
+
+  console.error
+    Supabase Error: {
+      code: '23505',
+      details: 'Key (email)=(test@example.com) already exists.',
+      hint: null,
+      message: 'duplicate key value violates unique constraint "emails_email_key"'
+    }
+
+    [0m [90m 50 |[39m             [90m// since the email was sent (or decide behavior). [39m
+     [90m 51 |[39m             [90m// For duplicates (UNIQUE constraint), it will error.[39m
+    [31m[1m>[22m[39m[90m 52 |[39m             console[33m.[39merror([32m'Supabase Error:'[39m[33m,[39m dbError)[33m;[39m
+     [90m    |[39m                     [31m[1m^[22m[39m
+     [90m 53 |[39m             [36mif[39m (dbError[33m.[39mcode [33m===[39m [32m'23505'[39m) { [90m// Postgres unique violation code[39m
+     [90m 54 |[39m                 [36mreturn[39m res[33m.[39mstatus([35m200[39m)[33m.[39mjson({ message[33m:[39m [32m'Correo de bienvenida enviado (Email ya suscrito)'[39m })[33m;[39m
+     [90m 55 |[39m             }[0m
+
+      at error (src/server.js:52:21)
+
+  console.error
+    API Error: Error: SMTP Error
+        at Object.<anonymous> (C:\Users\Abner\Desktop\Cursos\Curso de Google Antigravity\Proyectos\landingPage\tests\api.test.js:38:37)
+        at Promise.finally.completed (C:\Users\Abner\Desktop\Cursos\Curso de Google Antigravity\Proyectos\landingPage\node_modules\jest-circus\build\jestAdapterInit.js:1557:28)
+        at new Promise (<anonymous>)
+        at callAsyncCircusFn (C:\Users\Abner\Desktop\Cursos\Curso de Google Antigravity\Proyectos\landingPage\node_modules\jest-circus\build\jestAdapterInit.js:1497:10)
+        at _callCircusTest (C:\Users\Abner\Desktop\Cursos\Curso de Google Antigravity\Proyectos\landingPage\node_modules\jest-circus\build\jestAdapterInit.js:1007:40)
+        at processTicksAndRejections (node:internal/process/task_queues:105:5)
+        at _runTest (C:\Users\Abner\Desktop\Cursos\Curso de Google Antigravity\Proyectos\landingPage\node_modules\jest-circus\build\jestAdapterInit.js:947:3)
+        at C:\Users\Abner\Desktop\Cursos\Curso de Google Antigravity\Proyectos\landingPage\node_modules\jest-circus\build\jestAdapterInit.js:849:7
+        at _runTestsForDescribeBlock (C:\Users\Abner\Desktop\Cursos\Curso de Google Antigravity\Proyectos\landingPage\node_modules\jest-circus\build\jestAdapterInit.js:862:11)
+        at _runTestsForDescribeBlock (C:\Users\Abner\Desktop\Cursos\Curso de Google Antigravity\Proyectos\landingPage\node_modules\jest-circus\build\jestAdapterInit.js:857:11)
+        at run (C:\Users\Abner\Desktop\Cursos\Curso de Google Antigravity\Proyectos\landingPage\node_modules\jest-circus\build\jestAdapterInit.js:761:3)
+        at runAndTransformResultsToJestFormat (C:\Users\Abner\Desktop\Cursos\Curso de Google Antigravity\Proyectos\landingPage\node_modules\jest-circus\build\jestAdapterInit.js:1918:21)
+        at jestAdapter (C:\Users\Abner\Desktop\Cursos\Curso de Google Antigravity\Proyectos\landingPage\node_modules\jest-circus\build\runner.js:101:19)
+        at runTestInternal (C:\Users\Abner\Desktop\Cursos\Curso de Google Antigravity\Proyectos\landingPage\node_modules\jest-runner\build\index.js:275:16)
+        at runTest (C:\Users\Abner\Desktop\Cursos\Curso de Google Antigravity\Proyectos\landingPage\node_modules\jest-runner\build\index.js:343:7)
+
+    [0m [90m 59 |[39m         res[33m.[39mstatus([35m200[39m)[33m.[39mjson({ message[33m:[39m [32m'Correo de bienvenida enviado y guardado correctamente'[39m })[33m;[39m
+     [90m 60 |[39m     } [36mcatch[39m (error) {
+    [31m[1m>[22m[39m[90m 61 |[39m         console[33m.[39merror([32m'API Error:'[39m[33m,[39m error)[33m;[39m
+     [90m    |[39m                 [31m[1m^[22m[39m
+     [90m 62 |[39m         res[33m.[39mstatus([35m500[39m)[33m.[39mjson({ error[33m:[39m [32m'No se pudo procesar la solicitud'[39m })[33m;[39m
+     [90m 63 |[39m     }
+     [90m 64 |[39m })[33m;[39m[0m
+
+      at error (src/server.js:61:17)
+
+FAIL tests/api.test.js
+  POST 
+/api/send-welcome-email
+    ├ù should return 200 
+and success message when 
+email is sent (1072 ms)
+    ÔêÜ should return 400 
+if email is missing (12 ms)
+    ÔêÜ should return 500 
+if email service fails (19 
+ms)
+
+  ÔùÅ POST 
+/api/send-welcome-email ÔÇ║ 
+should return 200 and 
+success message when email 
+is sent
+
+    expect(received).toEqual
+(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 1
+
+      Object {
+    -   "message": "Correo 
+de bienvenida enviado y 
+guardado correctamente",
+    +   "message": "Correo 
+de bienvenida enviado 
+(Email ya suscrito)",
+      }
+
+    [0m [90m 21 |[39m
+     [90m 22 |[39m        
+ expect(res[33m.[39mstatus
+Code)[33m.[39mtoEqual([35
+m200[39m)[33m;[39m
+    
+[31m[1m>[22m[39m[90m 
+23 |[39m         expect(res
+[33m.[39mbody)[33m.[39mt
+oEqual({ message[33m:[39m 
+[32m'Correo de bienvenida 
+enviado y guardado 
+correctamente'[39m 
+})[33m;[39m
+     [90m    |[39m        
+                  
+[31m[1m^[22m[39m
+     [90m 24 |[39m        
+ expect(sendEmail)[33m.[39
+mtoHaveBeenCalledWith([32m'
+test@example.com'[39m[33m,
+[39m [32m'Tester'[39m)[3
+3m;[39m
+     [90m 25 |[39m     
+})[33m;[39m
+     [90m 26 |[39m[0m
+
+      at Object.toEqual 
+(tests/api.test.js:23:26)
+
+Test Suites: 1 failed, 1 
+total
+Tests:       1 failed, 2 
+passed, 3 total
+Snapshots:   0 total
+Time:        4.739 s
+Ran all test suites 
+matching tests/api.test.js.
+npm verbose cwd C:\Users\Abn
+er\Desktop\Cursos\Curso de 
+Google Antigravity\Proyectos
+\landingPage
+npm verbose os Windows_NT 
+10.0.26100
+npm verbose node v22.14.0
+npm verbose npm  v10.9.2
+npm verbose exit 1
+npm verbose code 1

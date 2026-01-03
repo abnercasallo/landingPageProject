@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone - Registro</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="login-header">
+        <a href="index.html">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix Logo">
+        </a>
+    </header>
+
+    <div class="login-wrapper">
+        <div class="login-box">
+            <h1>Crea una cuenta</h1>
+            <form id="register-form">
+                <div class="form-control">
+                    <input type="text" id="reg-name" placeholder="Nombre completo" required>
+                </div>
+                <div class="form-control">
+                    <input type="email" id="reg-email" placeholder="Correo electrónico" required>
+                </div>
+                <div class="form-control">
+                    <input type="password" id="reg-password" placeholder="Contraseña (mín. 6 caracteres)" required>
+                </div>
+                <button type="submit" class="btn btn-login">Registrarse</button>
+            </form>
+
+            <div class="login-signup">
+                ¿Ya tienes cuenta? <a href="login.html">Inicia sesión aquí</a>.
+            </div>
+        </div>
+    </div>
+
+    <footer class="login-footer">
+        <div class="login-footer-content">
+            <p>¿Preguntas? Llama al 1-844-505-2993</p>
+            <div class="login-footer-cols">
+                <ul>
+                    <li><a href="#">Preguntas frecuentes</a></li>
+                    <li><a href="#">Centro de ayuda</a></li>
+                    <li><a href="#">Términos de uso</a></li>
+                    <li><a href="#">Privacidad</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Preferencias de cookies</a></li>
+                    <li><a href="#">Información corporativa</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="register.js"></script>
+</body>
+
+</html>

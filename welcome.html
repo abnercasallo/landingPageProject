@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone - Bienvenido</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body class="welcome-page">
+    <header class="login-header">
+        <a href="index.html">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix Logo">
+        </a>
+        <button id="logout-btn" class="btn btn-rounded">Cerrar sesión</button>
+    </header>
+
+    <div id="verify-banner" class="verify-banner" style="display: none;">
+        <p>⚠️ Tu cuenta no está verificada. Por favor, revisa tu correo electrónico.</p>
+    </div>
+
+    <main class="welcome-container">
+        <div class="welcome-content">
+            <h1>¡Hola, <span id="user-name">Usuario</span>!</h1>
+            <p>Has iniciado sesión correctamente. Prepárate para disfrutar del mejor contenido.</p>
+            <div class="welcome-actions">
+                <a href="browse.html" id="explore-btn" class="btn btn-xl">Explorar contenido</a>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="welcome.js"></script>
+</body>
+
+</html>

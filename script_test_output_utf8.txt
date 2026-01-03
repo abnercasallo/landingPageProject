@@ -1,0 +1,119 @@
+﻿node.exe : npm verbose cli 
+C:\Program 
+Files\nodejs\node.exe 
+C:\Program Files\nodejs\node
+_modules\npm\bin\npm-cli.js
+En C:\Program 
+Files\nodejs\npm.ps1: 29 
+Carácter: 3
++   & $NODE_EXE $NPM_CLI_JS 
+$args
++   ~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~
+    + CategoryInfo          
+    : NotSpecified: (npm v  
+  erbose cli...\bin\npm-c   
+ li.js:String) [], Remot    
+eException
+    + FullyQualifiedErrorId 
+    : NativeCommandError
+ 
+npm info using npm@10.9.2
+npm info using node@v22.14.0
+npm verbose title npm test 
+tests/script.test.js
+npm verbose argv "test" 
+"tests/script.test.js" 
+"--loglevel" "verbose"
+npm verbose logfile 
+logs-max:10 dir:C:\Users\Abn
+er\AppData\Local\npm-cache\_
+logs\2025-12-30T20_17_42_914
+Z-
+npm verbose logfile C:\Users
+\Abner\AppData\Local\npm-cac
+he\_logs\2025-12-30T20_17_42
+_914Z-debug-0.log
+
+> landingpage@1.0.0 test
+> jest tests/script.test.js
+
+FAIL tests/script.test.js
+  script.js
+    initAccordion
+      ÔêÜ should toggle 
+active class and set 
+maxHeight on click (37 ms)
+    initForm
+      ÔêÜ should alert if 
+email is empty (14 ms)
+      ÔêÜ should alert if 
+email is invalid (7 ms)
+      ├ù should send email 
+if valid (21 ms)
+      ÔêÜ should handle API 
+errors (7 ms)
+
+  ÔùÅ script.js ÔÇ║ 
+initForm ÔÇ║ should send 
+email if valid
+
+    expect(received).toBe(ex
+pected) // Object.is 
+equality
+
+    Expected: "Empezar"
+    Received: "Get Started"
+
+    [0m [90m  99 |[39m   
+          expect(alertMock)
+[33m.[39mtoHaveBeenCalledWi
+th([32m'┬í├ëxito!: Correo 
+de bienvenida enviado y 
+guardado correctamente'[39m
+)[33m;[39m
+     [90m 100 |[39m       
+      expect(heroEmail[33m.
+[39mvalue)[33m.[39mtoBe(
+[32m''[39m)[33m;[39m
+    
+[31m[1m>[22m[39m[90m 
+101 |[39m             expec
+t(heroSubmit[33m.[39mtextC
+ontent)[33m.[39mtoBe([32m
+'Empezar'[39m)[33m;[39m
+     [90m     |[39m       
+                            
+         
+[31m[1m^[22m[39m
+     [90m 102 |[39m       
+      expect(heroSubmit[33m
+.[39mdisabled)[33m.[39mto
+Be([36mfalse[39m)[33m;[3
+9m
+     [90m 103 |[39m       
+  })[33m;[39m
+     [90m 104 |[39m[0m
+
+      at Object.toBe (tests/
+script.test.js:101:44)
+
+Test Suites: 1 failed, 1 
+total
+Tests:       1 failed, 4 
+passed, 5 total
+Snapshots:   0 total
+Time:        5.857 s
+Ran all test suites 
+matching 
+tests/script.test.js.
+npm verbose cwd C:\Users\Abn
+er\Desktop\Cursos\Curso de 
+Google Antigravity\Proyectos
+\landingPage
+npm verbose os Windows_NT 
+10.0.26100
+npm verbose node v22.14.0
+npm verbose npm  v10.9.2
+npm verbose exit 1
+npm verbose code 1

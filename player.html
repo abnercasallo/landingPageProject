@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproduciendo... - Netflix Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            overflow: hidden;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .player-container {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 100;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+            background: rgba(0, 0, 0, 0.5);
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: background 0.3s;
+        }
+
+        .back-button:hover {
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        .video-title {
+            position: absolute;
+            bottom: 40px;
+            left: 40px;
+            color: white;
+            z-index: 10;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            pointer-events: none;
+        }
+
+        .video-title h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="player-container">
+        <div class="back-button" onclick="history.back()">
+            <i class="fas fa-arrow-left"></i>
+        </div>
+
+        <video id="main-video" controls autoplay>
+            <source id="video-source" src="" type="video/mp4">
+            Tu navegador no soporta el formato de video.
+        </video>
+
+        <div class="video-title">
+            <h1 id="movie-name">Nombre de la Película</h1>
+        </div>
+    </div>
+
+    <script>
+        // Get URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const videoUrl = urlParams.get('video');
+        const title = urlParams.get('title');
+
+        if (videoUrl) {
+            document.getElementById('video-source').src = videoUrl;
+            document.getElementById('main-video').load();
+        }
+
+        if (title) {
+            document.getElementById('movie-name').textContent = title;
+            document.title = `Viendo: ${title} - Netflix Clone`;
+        }
+    </script>
+</body>
+
+</html>
