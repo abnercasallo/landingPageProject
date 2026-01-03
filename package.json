@@ -9,6 +9,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "description": "",
   "dependencies": {
     "@supabase/supabase-js": "^2.89.0",
